@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>medical record details</h1>
+{%block body%}
+{% for m in medical_details %}
+
+<h1>{{m.medical_history}}</h1>
+
+{% endfor %}
+{% endblock %}
+
+</body>
+</html>

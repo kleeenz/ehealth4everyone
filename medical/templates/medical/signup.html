@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<nav class="navbar navbar-extended-lg navbar-dark bg-primary">
+    <div class="container">
+<div id="nav-mobile" class="nav justify-content-end">
+
+              <a href="/doctors" class="btn btn-primary" class="material-icons right"><b>SPECIALIST_SIGNUP</b></a>
+                <a href="/corona" class="btn btn-primary" class="material-icons right"><b>corona_virus_update</b></a>
+                <a href="/mosquito" class="btn btn-primary" class="material-icons right"><b>malaria_news_update</b></a>
+
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+</button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">Action</button>
+            <button class="dropdown-item" type="button">Another action</button>
+            <button class="dropdown-item" type="button">Something else here</button>
+
+
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</nav>
+
+<body>
+<form method ="post">
+    {%csrf_token%}
+{{form.as_p}}
+    <button type="submit">submit</button>
+</form>
+</body>
+</html>

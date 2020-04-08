@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>user medical records</h1>
+{%block body%}
+{%for u in user_details%}
+
+<h1>{{u.Name}}</h1>
+<h1>{{u.Age}}</h1>
+<h1>{{u.gender_choice}}</h1>
+<h1>{{u.Travel_history}}</h1>
+<h1>{{u.medical_history}}</h1>
+
+{% endfor %}
+{% endblock %}
+</body>
+</html>

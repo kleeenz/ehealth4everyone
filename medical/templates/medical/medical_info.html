@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info</title>
+</head>
+<body>
+<form method="post" action="">
+<h1>medical information</h1>
+{%csrf_token%}
+{{medic.as_p}}
+<button type="submit">submit</button>
+</form>
+</body>
+</html>
